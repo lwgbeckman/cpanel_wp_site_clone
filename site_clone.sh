@@ -353,10 +353,10 @@ echo -e "\nCloning of ${GREEN}$source_domain${ENDCOLOR} to ${GREEN}$destination_
 #################################### Priming the undo script ###############################################################
 
 # Setting the parameters in remove_last_clone.sh
-sed -i "s/source_db=.*/source_db=\"$source_db\"/" ./remove_last_clone.sh
-sed -i "s,destination_docroot=.*,destination_docroot=\"$destination_docroot\"," ./remove_last_clone.sh
-sed -i "s/destination_user=.*/destination_user=\"$destination_user\"/" ./remove_last_clone.sh
-sed -i "s/destination_db=.*/destination_db=\"$destination_db\"/" ./remove_last_clone.sh
+#sed -i "s/source_db=.*/source_db=\"$source_db\"/" ./remove_last_clone.sh
+#sed -i "s,destination_docroot=.*,destination_docroot=\"$destination_docroot\"," ./remove_last_clone.sh
+#sed -i "s/destination_user=.*/destination_user=\"$destination_user\"/" ./remove_last_clone.sh
+#sed -i "s/destination_db=.*/destination_db=\"$destination_db\"/" ./remove_last_clone.sh
 
 rm -f /tmp/sc_error
 
