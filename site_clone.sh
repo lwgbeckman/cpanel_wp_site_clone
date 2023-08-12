@@ -359,6 +359,7 @@ echo -e "\nCloning of ${GREEN}$source_domain${ENDCOLOR} to ${GREEN}$destination_
 #sed -i "s/destination_db=.*/destination_db=\"$destination_db\"/" ./remove_last_clone.sh
 
 rm -f /tmp/sc_error
+rm -f ./tmp.log
 
 echo  ""
 
