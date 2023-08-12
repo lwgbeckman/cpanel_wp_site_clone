@@ -34,7 +34,7 @@ Help()
    # Display Help
    echo "This is a simple site clone script for WordPress websites on a server with cPanel"
    echo
-   echo -e "${YELLOW}Syntax: sh site_clone.sh [source_domain.tld] [destination_domain.tld] [-d|f|h|v|V]${ENDCOLOR}"
+   echo -e "${YELLOW}Syntax: sh site_clone.sh [-d|f|h|v|V] [source_domain.tld] [destination_domain.tld]${ENDCOLOR}"
    echo "options:"
    echo "d	Dry run. Doesn't make any changes."
    echo "f	Force. Ignores all errors unless it reaches a critical error."
