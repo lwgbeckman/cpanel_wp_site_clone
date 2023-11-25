@@ -239,7 +239,7 @@ uapi_error_check
 
 # Dumping the DB
 echo -e "${YELLOW}[INFO]${ENDCOLOR} Dumping the source DB"
-source_db=$(grep 'DB_NAME' /home/milkyway/public_html/wp-config.php | cut -d "'" -f 4)
+source_db=$(grep 'DB_NAME' $source_docroot/wp-config.php | cut -d "'" -f 4)
 mysqldump "$source_db" > "/home/temp/$source_db.sql" 2> /tmp/sc_error
 
 # Checking if the dump was successful
@@ -358,8 +358,8 @@ echo -e "\nCloning of ${GREEN}$source_domain${ENDCOLOR} to ${GREEN}$destination_
 #sed -i "s/destination_user=.*/destination_user=\"$destination_user\"/" ./remove_last_clone.sh
 #sed -i "s/destination_db=.*/destination_db=\"$destination_db\"/" ./remove_last_clone.sh
 
-rm -f /tmp/sc_error
-rm -f ./tmp.log
+#rm -f /tmp/sc_error
+#rm -f ./tmp.log
 
 echo  ""
 
