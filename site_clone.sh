@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="0.2.3b"
+version="1.3"
 author="George Beckman"
 
 #######################################################################################
@@ -177,8 +177,6 @@ if [ $fail -eq 1 ]
 then
         exit 0
 fi
-
-echo -e "\n${YELLOW}The script is still WIP. use -d for a dry run.${ENDCOLOR}\n\n"
 
 echo -e "Source: ${GREEN}$source_domain${ENDCOLOR}"
 echo -e "Source Docroot: ${YELLOW}$source_docroot${ENDCOLOR}\n"
