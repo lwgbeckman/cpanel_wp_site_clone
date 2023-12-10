@@ -340,9 +340,9 @@ else
 fi
 
 # Replacing all occurances of the source domain in all destination docroot files recursively
-echo -e "${YELLOW}[INFO]${ENDCOLOR} Replacing all occurances of the source domain ${YELLOW}$source_domain${ENDCOLOR} in all destination docroot files recursively with the destination domain ${YELLOW}$destination_domain${ENDCOLOR}"
-find $destination_docroot -type f -exec sed -i "s/$source_domain/$destination_domain/g" {} \;
-echo -e "${GREEN}[DONE]${ENDCOLOR}"
+#echo -e "${YELLOW}[INFO]${ENDCOLOR} Replacing all occurances of the source domain ${YELLOW}$source_domain${ENDCOLOR} in all destination docroot files recursively with the destination domain ${YELLOW}$destination_domain${ENDCOLOR}"
+#find $destination_docroot -type f -exec sed -i "s/$source_domain/$destination_domain/g" {} \;
+#echo -e "${GREEN}[DONE]${ENDCOLOR}"
 
 echo -e "\nCloning of ${GREEN}$source_domain${ENDCOLOR} to ${GREEN}$destination_domain${ENDCOLOR} successfull!"
 
