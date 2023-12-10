@@ -293,6 +293,7 @@ echo -e "${GREEN}[DONE]${ENDCOLOR}"
 # Fixing permissions
 echo -e "${YELLOW}[INFO]${ENDCOLOR} Changing ownership to ${YELLOW}$destination_user:$destination_user${ENDCOLOR}"
 find $destination_docroot ! -user $destination_user -exec chown "$destination_user:$destination_user" {} \;
+chgrp nobody $destination_docroot
 echo -e "${GREEN}[DONE]${ENDCOLOR}"
 
 ###########################################################################################################################
