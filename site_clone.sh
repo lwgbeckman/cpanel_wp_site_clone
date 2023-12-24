@@ -149,8 +149,8 @@ then
         exit 0
 fi
 
-source_docroot=$(awk -F "==|:" '{print $1, $6}' /etc/userdatadomains | egrep "^$source_domain" | cut -d " " -f 2)
-destination_docroot=$(awk -F "==|:" '{print $1, $6}' /etc/userdatadomains | egrep "^$destination_domain" | cut -d " " -f 2)
+source_docroot=$(awk -F "==|:" '{print $1, $6}' /etc/userdatadomains | egrep "^$source_domain " | cut -d " " -f 2)
+destination_docroot=$(awk -F "==|:" '{print $1, $6}' /etc/userdatadomains | egrep "^$destination_domain " | cut -d " " -f 2)
 
 
 if [ -z "$source_docroot" ]
